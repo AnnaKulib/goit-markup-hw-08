@@ -1,0 +1,8 @@
+@mixin flexible($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+// @include flexible($type)
+// @include flexible(inline-flex)
