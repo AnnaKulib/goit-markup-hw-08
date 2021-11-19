@@ -9,3 +9,9 @@ $base-font-size: 14px;
 
 $tr-duration: 250ms;
 $tr-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$bg-linear-gradient: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4) 40%
+);

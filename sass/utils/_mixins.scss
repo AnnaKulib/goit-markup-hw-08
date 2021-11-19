@@ -7,7 +7,7 @@
 // @include flexible($type)
 // @include flexible(inline-flex)
 
-// Есть в секции features
+// Есть в секции features, works
 @mixin title-font() {
   font-weight: 700;
   font-size: $base-font-size;
@@ -22,3 +22,4 @@
   line-height: 1.16;
   text-align: center;
 }
+// @include section-title-font()
