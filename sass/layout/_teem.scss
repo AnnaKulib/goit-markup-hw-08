@@ -1,12 +1,4 @@
 .teem {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
   background-color: #f5f4fa;
 }
 
@@ -18,10 +10,7 @@
     margin-bottom: -30px;
   }
 }
-.grid {
-}
-.list {
-}
+
 .team__item {
   margin-bottom: 30px;
 
@@ -40,9 +29,6 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.teem__img {
-}
-
 .team__box {
   padding-top: 30px;
   padding-bottom: 24px;
@@ -53,6 +39,7 @@
     padding-bottom: 30px;
   }
 }
+
 .team__title {
   margin-bottom: 10px;
 
@@ -63,6 +50,7 @@
 
   color: $title-text-color;
 }
+
 .team__desc {
   margin-bottom: 16px;
 
@@ -71,6 +59,4 @@
   text-align: center;
 
   color: $primary-text-color;
-}
-.teem__social {
 }
