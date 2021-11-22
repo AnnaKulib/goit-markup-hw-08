@@ -22,13 +22,13 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
-      <div class="container header-container"> -->
-    <!-- Навигация -->
-    <!-- <nav class="nav">
-          <a class="header__logo logo" href="index.html">
-            <span class="logo-web">Web</span>Studio</a
-          >
+    <header class="header">
+      <div class="container header-container">
+        <a class="header__logo logo" href="index.html">
+          <span class="logo-web">Web</span>Studio</a
+        >
+        <!-- Навигация -->
+        <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link current" href="index.html">Студия</a>
@@ -40,9 +40,10 @@
               <a class="nav__link" href="">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-    <!-- Контакты -->
-    <!-- <ul class="contact__list list">
+        </nav>
+        <!-- Конец навигации -->
+        <!-- Контакты -->
+        <ul class="contact contact__list list">
           <li class="contact__item contact-item">
             <a class="contact__link link" href="mailto:info@devstudio.com">
               <svg class="contact__icon envelope">
@@ -68,8 +69,75 @@
             >
           </li>
         </ul>
+        <!-- Конец контактов -->
+        <!-- Мобильное меню -->
+        <button class="burger-menu mob-menu--open" type="button">
+          <svg class="burger-menu__icon" width="24" height="24">
+            <use href="./images/sprite-icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu__container">
+          <button class="mob-menu__button--close mob-menu--close" type="button">
+            <svg class="mob-menu__icon" width="24" height="24">
+              <use href="./images/sprite-icons.svg#icon-mob-menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu__box">
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="index.html" class="mob-menu__link link">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="portfolio.html" class="mob-menu__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__contacts-box">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="
+                    mob-contacts__link mob-contacts__link--highlighted
+                    link
+                  "
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts__link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social list">
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Instagram</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Twitter</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Facebook</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Конец мобильного меню -->
+    </header>
     <!-- Мэйн -->
     <main class="main">
       <!-- Герой -->
@@ -874,6 +942,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <!-- <script>
       const refs = {
         openModalBtn: document.querySelector('[data-modal-open]'),

@@ -1,0 +1,18 @@
+.burger-menu {
+  @include flexible();
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+
+  .burger-menu__icon {
+    fill: currentColor;
+
+    transition: fill $tr-duration $tr-timing-function;
+  }
+
+  &:hover .burger-menu__icon,
+  &:focus .burger-menu__icon {
+    fill: $accent-color;
+  }
+}
