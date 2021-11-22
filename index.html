@@ -752,37 +752,39 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer section-footer">
+    <footer class="footer">
       <div class="container footer-container">
-        <div class="footer__contacts">
+        <div class="footer-contacts">
           <a class="footer__logo logo" href="/">
             <span class="logo-web">Web</span>Studio
           </a>
           <address>
             <a
-              class="footer__adress"
+              class="footer-contacts__adress"
               href="https://goo.gl/maps/LREKgnmBMirVQB2t9"
               target="_blank"
               rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </address>
-          <ul class="list">
-            <li>
-              <a class="footer__contact" href="mailto:info@devstudio.com"
+          <ul class="footer-contacts__list list">
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__link link"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="footer__contact" href="tel:+380961111111"
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
         </div>
-        <div class="footer__invite invite">
-          <b class="invite__text">присоединяйтесь</b>
-          <ul class="footer-social list">
+        <div class="footer-social">
+          <b class="footer__text--inviting">присоединяйтесь</b>
+          <ul class="footer-social__list list">
             <li class="footer-social__item">
               <a href="" class="footer-social__link" target="_blank">
                 <svg class="footer-social__icon" width="20" height="20">
@@ -813,23 +815,24 @@
             </li>
           </ul>
         </div>
-        <div class="footer__invite">
-          <b class="invite__text">Подпишитесь на рассылку</b>
-          <form class="form-invite">
+        <div class="footer-form">
+          <b class="footer__text--inviting">Подпишитесь на рассылку</b>
+          <form class="form">
             <input
-              class="form-invite__input"
+              class="footer-form__input"
               type="email"
               name="mail"
               placeholder="E-mail"
               autocomplete="on"
             />
-            <button class="button form-invite__button" type="submit">
+            <button class="button footer-form__button" type="submit">
               Подписаться
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <!-- Конец футера -->
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">

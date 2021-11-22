@@ -6,10 +6,10 @@
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
-}
 
-.logo-web {
-  color: $accent-color;
+  .logo-web {
+    color: $accent-color;
+  }
 }
 
 .header__logo {
@@ -20,4 +20,12 @@
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+
+  color: $primary-white-color;
 }

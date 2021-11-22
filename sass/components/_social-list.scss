@@ -27,6 +27,11 @@
   &:focus {
     background-color: $accent-color;
   }
+
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
+    fill: $primary-white-color;
+  }
 }
 
 .social-list__icon {
@@ -36,10 +41,4 @@
   fill: $primary-icon-color;
 
   transition: fill $tr-duration $tr-timing-function;
-}
-
-// !!!!! Надо переделать
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: $primary-white-color;
 }
