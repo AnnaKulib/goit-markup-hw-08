@@ -74,21 +74,97 @@
     color: $primary-white-color;
   }
 }
+
 .portfolio__list {
+  margin-bottom: -30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 .portfolio__item {
+  margin-bottom: 30px;
+
+  border: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
+
 .portfolio__link {
+  display: block;
+
+  transition: box-shadow $tr-duration $tr-timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
+
 .portfolio__box {
+  position: relative;
 }
-.portfolio__img {
-}
+
 .portfolio__desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 0;
+
+  @include flexible(flex);
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: $primary-white-color;
+
+  opacity: 0;
+
+  transition: opacity $tr-duration $tr-timing-function,
+    top $tr-duration $tr-timing-function;
 }
+
+// !!!!!! Здесь тоже надо переделать
+.portfolio__link:focus .portfolio__desc,
+.portfolio__link:hover .portfolio__desc {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+
 .portfolio__card {
+  padding: 20px 24px;
 }
+
 .portfolio__name {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: $title-text-color;
 }
+
 .portfolio__text {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: $primary-text-color;
 }
