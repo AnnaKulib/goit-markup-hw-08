@@ -1,10 +1,10 @@
 .footer-contacts {
-  @media screen and (min-width: 768px) {
-    margin-left: 76px;
-  }
+  text-align: center;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    margin-left: 215px;
+    text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -19,20 +19,7 @@
   color: $primary-white-color;
 }
 
-.footer-contacts__list {
-  margin-bottom: 60px;
-
-  //   @media screen and (min-width: 768px) {
-  //     margin-bottom: 20px;
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //   margin-bottom: 0;
-  //     align-items: flex-start;
-  // }
-}
-
 .footer-contacts__item {
-  text-align: center;
   &:not(:last-child) {
     margin-bottom: 8px;
   }

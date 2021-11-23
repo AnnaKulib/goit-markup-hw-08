@@ -6,20 +6,17 @@
 }
 
 .footer-container {
-  @include flexible();
-  flex-direction: column;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
-    //     display: flex;
-    //   justify-content: space-between;
-    //   align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
